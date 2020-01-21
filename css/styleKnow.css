@@ -1,0 +1,254 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS Reset */
+
+
+a:link { color: #fff; text-decoration: none}
+a:visited { color: #fff; text-decoration: none}
+a:hover { color: #fff; text-decoration: none}
+a:active { color: #fff; text-decoration: none}
+
+html, body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Top of page CSS, including menu and top phrase */
+
+.hiPart {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+}
+
+.hiPart h1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0px;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+.sandwichM {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.sandwichM img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.menuClose {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.navMenu {
+    width: 100%;
+    position: fixed;
+    background-color: #000;
+    text-align: center;
+    top: -123px;
+    z-index: 5;
+    padding: 10px 0px 3px 0px;
+    background-color: #000;
+    z-index: 20;
+}
+
+.navInner {
+    position: relative;
+}
+
+a {
+    cursor: pointer;
+}
+
+.navInner ul li {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+.navInner ul li a:hover {
+    color: #00C6CF;
+    text-decoration: none;
+}
+
+.navMenu .navInner ul {
+    margin-bottom: 0px;
+}
+
+.col-sm {
+    margin-top: 20px;
+}
+
+/* Carousel rules */ 
+.carousel-item {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.carousel-item:first-of-type {
+    background-image: radial-gradient(circle, #61b0ab, #71c2b4, #85d4bc, #9be6c2, #b4f8c8);
+}
+
+.carousel-item:nth-of-type(2) {
+    background-image: radial-gradient(circle, #ff8b5d, #fda56f, #fbbd88, #fad3a5, #fbe7c6);
+}
+
+.carousel-item:nth-of-type(3) {
+    background-image: radial-gradient(circle, #a484aa, #bc8db1, #d497b7, #eaa2ba, #ffaebc);
+}
+
+.carousel-item img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 120px;
+}
+
+.carousel-caption {
+    text-transform: uppercase;
+}
+
+ol.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+/* Three steps below the carousel */ 
+
+.titleH {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.circledDigit {
+    font-size: 30px;
+    font-weight: 900;
+    background-image: radial-gradient(circle, #000000, #2a272a, #4b4a54, #677380, #82a0aa);
+    width: 80px;
+    height: 80px;
+    line-height: 78px;
+    border-radius: 100%;
+    margin: auto;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.circledDigit:hover {
+    background-image: radial-gradient(circle, #4b4a54, #606876, #748997, #88acb4, #a3cfcd);
+}
+
+.threeSteps {
+    max-width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Example buttons with Bootstrap */
+
+.sampleImg img {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.exampleSection {
+    background-color: #F4EBD0;
+    padding: 20px 0px;
+}
+
+.exampleSection p, .changedTextOne p, .sectionLearnTwo p {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.changedTextOne p {
+    padding: 0px;
+}
+
+.btn.btn-success, .btn.btn-warning, .btn.btn-danger {
+    margin-bottom: 20px;
+}
+
+.lastWord {
+    max-width: 700px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.btn {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600!important;
+    min-width: 200px;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .hiPart h1 {
+        max-width: 250px;
+        margin: auto;
+        font-size: 18px;
+    }
+  
+}

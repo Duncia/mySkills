@@ -1,0 +1,198 @@
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: none;
+}
+
+.topSection {
+    width: 100%;
+    background-color: #fff;
+}
+
+.topSection .inner {
+    position: relative;
+    font-size: 0px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.topDescription {
+    padding: 10px;
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.jsExplain {
+    background-color: #F4EBD0;
+    padding-bottom: 20px;
+}
+
+.bottomPar {
+    margin-bottom: 20px;
+}
+
+/* MyCash fields CSS */
+
+.amountPart {
+    background-image: url(background-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    padding: 20px 10px;
+}
+
+.displayBudget, .displayIncome, .displayExpense {
+    font-size: 16px;
+    background-color: #fff;
+    max-width: 300px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.displayIncome {
+    background-color: #00C9A7;
+    color: #fff;
+}
+
+.displayExpense {
+    background-color: #C34A36;
+    color: #fff;
+}
+
+.addContainer {
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.addItemPart {
+    font-size: 16px;
+}
+
+.addType, .addDescription, .addValue {
+    padding: 10px;
+    border: 1px solid #fff;
+    min-height: 44px;
+    background-color: #000;
+    color: #fff;
+}
+
+.addType {
+    min-width: 60px;
+    height: 46px;
+}
+
+.addValue {
+    margin-left: 20px;
+    width: 100%;
+}
+
+input.addValue, input.addDescription {
+    text-align: left;
+}
+
+.addDescription {
+    width: 100%;
+}
+
+.btnContainer {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.addButton .fas.fa-check {
+    font-size: 30px;
+    color: #00C9A7;
+}
+
+.resetButton .fas.fa-trash-alt {
+    font-size: 30px;
+    color: #C34A36;
+}
+
+.addButton, .resetButton {
+    min-width: 70px;
+    min-height: 70px;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.addButton:focus, .resetButton:focus {
+    outline: none;
+}
+
+.addButton:active, .resetButton:focus {
+    transform: translateY(2px);
+}
+
+.addType:focus,
+.addDescription:focus,
+.addValue:focus {
+    outline: none;
+    border: 1px solid #00C9A7;
+}
+
+.addType.minus:focus,
+.addDescription.minus:focus,
+.addValue.minus:focus {
+    outline: none;
+    border: 1px solid #C34A36;
+}
+
+.report {
+    font-size: 14px;
+    padding: 10px 20px;
+    background-image: radial-gradient(circle, #daeef7, #e3f0fc, #edf1fe, #f6f3ff, #fef6ff);
+    border: 1px solid #000;
+}
+
+.report p {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.incomeTitle p {
+    color: #00C9A7;
+}
+
+.expensesTitle p {
+    color: #C34A36;
+}
+
+.incomeItem, .expensesItem {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: auto;
+    border-top: 1px solid #000;
+}
+
+.incomeItem:hover, .expensesItem:hover {
+    background-color: #EEEFF4;
+}
+
+.valueN{
+    min-width: 100px;
+    text-align: right;
+}
+
+.describeT {
+    text-align: left;
+}

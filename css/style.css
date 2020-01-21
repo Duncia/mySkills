@@ -1,0 +1,509 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS Reset */
+
+
+a:link { color: #fff; text-decoration: none}
+a:visited { color: #fff; text-decoration: none}
+a:hover { color: #fff; text-decoration: none}
+a:active { color: #fff; text-decoration: none}
+
+html, body {
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px 5px;
+}
+
+/* Top of page CSS, including menu and top phrase */
+
+.hiPart {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.hiPart h1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0px;
+}
+
+.sandwichM {
+    position: absolute;
+    top: 22px;
+    left: 10px;
+}
+
+.sandwichM img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.menuClose {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    top: -4px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.navMenu {
+    width: 100%;
+    position: fixed;
+    background-color: #000;
+    text-align: center;
+    top: -121px;
+    z-index: 5;
+    padding: 10px 0px 3px 0px;
+}
+
+.navInner {
+    position: relative;
+}
+
+a {
+    cursor: pointer;
+}
+
+.navInner ul li {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+}
+
+.navInner ul li a:hover {
+    color: #00C6CF;
+}
+
+/* CSS of the main grid and all boxes */ 
+
+.mainBlock {
+    background-color: #fff;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.introPage, .introPageTwo, .introPageThree {
+    font-size: 0px;
+    display: inline-block;
+    width: 100%;
+}
+
+.introPage .firstLine, .introPageTwo .secondLine, .introPageThree .thirdLine {
+    display: inline-block;
+    font-size: 13px;
+}
+
+/* Proportions of boxes in width percentage */ 
+
+.firstLine.one {
+    width: 50%;
+}
+.firstLine.two {
+    width: 25%;
+}
+.firstLine.three {
+    width: 25%;
+}
+.secondLine.one {
+    width: 30%;
+}
+.secondLine.two {
+    width: 40%;
+}
+.secondLine.three {
+    width: 30%;
+}
+.thirdLine.one {
+    width: 50%;
+}
+.thirdLine.two {
+    width: 50%;
+}
+
+/* CSS for every box - there is different margin and color etc. */ 
+
+.container.partOne, .container.partTwo, .container.partThree, .containerTwo.partOne, .containerTwo.partTwo, .containerTwo.partThree, .containerThree.partOne, .containerThree.partTwo { 
+    border: 2px solid black;
+    box-sizing: border-box;
+    height: 250px;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+.container.partOne {
+    background-image: radial-gradient(circle, #d66d75, #ce575c, #c54141, #b82926, #aa0505);
+    margin: 10px 5px 5px 10px;
+}
+
+.container.partTwo {
+    background-image: radial-gradient(circle, #deb889, #d6a96e, #cd9a52, #c48b35, #b97d10);
+    margin: 10px 5px 5px 5px;
+}
+
+.container.partThree {
+    background-image: radial-gradient(circle, #5e254f, #671b42, #6c1032, #6d0920, #6a0c0b);
+    margin: 10px 10px 5px 5px;
+}
+
+.containerTwo.partOne {
+    background-image: radial-gradient(circle, #92c138, #abc52a, #c5c81c, #e0ca0c, #fbca03);
+    margin: 5px 5px 5px 10px;
+}
+
+.containerTwo.partTwo {
+    background-image: radial-gradient(circle, #46e7d4, #3be0e0, #41d8e8, #52d0ec, #67c7eb);
+    margin: 5px 5px 5px 5px;
+}
+
+.containerTwo.partThree {
+    background-image: radial-gradient(circle, #deb889, #d6a96e, #cd9a52, #c48b35, #b97d10);
+    margin: 5px 10px 5px 5px;
+}
+
+.containerThree.partOne {
+    background-image: radial-gradient(circle, #5e254f, #671b42, #6c1032, #6d0920, #6a0c0b);
+    margin: 5px 5px 10px 10px;
+}
+
+.containerThree.partTwo {
+    background-image: radial-gradient(circle, #92c138, #abc52a, #c5c81c, #e0ca0c, #fbca03);
+    margin: 5px 10px 10px 5px;
+}
+
+/* Text box rules */
+
+.textWrapper, .code1Static {
+    position: relative;
+}
+
+.text.top {
+    background-color: #fff;
+    position: absolute;
+    max-width: 250px;
+    border: 2px solid #000;
+    top: -2px;
+    left: -8px;
+    padding: 3px 6px 3px 12px;
+    transform: skew(-15deg);
+    z-index: 1;
+}
+
+.text.bubble {
+    background-color: #fff;
+    font-style: italic;
+    position: absolute;
+    width: 180px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 5px 5px 15px;
+    min-height: 35px;
+}
+
+.text.bubble.middle {
+    width: 210px;
+}
+
+.text.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 67px;
+    left: 45%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 0 50px 50px 0;
+    border-color: transparent #000 transparent transparent;
+}
+
+.text.triangleTwo {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 65px;
+    left: 45%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 0 46px 46px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.wpText {
+    text-align: center;
+}
+
+.wpText p {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #fff000;
+    width: 200px;
+}
+
+.text.top.bottom {
+    background-color: #fff;
+    position: absolute;
+    max-width: 220px;
+    border: 2px solid #000;
+    top: -2px;
+    left: -10px;
+    padding: 3px 6px 3px 20px;
+    transform: skew(-15deg);
+    z-index: 1;
+}
+
+/* Rules for images */
+
+.imageOne, .imageTwo, .imageThree {
+    text-align: center;
+}
+
+.imageOne img {
+    width: 120px;
+    padding-top: 63px;
+}
+
+.imageTwo img {
+    width: 80px;
+    padding-top: 120px;
+}
+
+.imageThree img {
+    width: 200px;
+    padding-top: 20px;
+}
+
+/* Moving text with Keyframes */
+
+.code1 {
+    position: relative;
+    -webkit-animation: code1Move 5s infinite;
+    animation: code1Move 5s infinite;
+}
+
+.code1.version2 {
+    position: relative;
+    -webkit-animation: code1Move2 5s infinite;
+    animation: code1Move2 5s infinite;
+}
+
+.code1.version3 {
+    position: relative;
+    -webkit-animation: code1Move3 5s infinite;
+    animation: code1Move3 5s infinite;
+}
+
+.code1.version4 {
+    position: relative;
+    -webkit-animation: code1Move4 5s infinite;
+    animation: code1Move4 5s infinite;
+}
+
+.code1 p, .code1Static p {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.code1.version2 p {
+    top: 60px; 
+}
+
+.code1.version3 p {
+    top: 80px;  
+}
+
+.code1.version4 p {
+    top: 120px;
+}
+
+@-webkit-keyframes code1Move {
+  0%   {top: 0px;}
+  25%  {top: 50px;}
+  75%  {top: 20px}
+  100% {top: 0px;}
+}
+
+@keyframes code1Move {
+  0%   {top: 0px;}
+  25%  {top: 50px;}
+  75%  {top: 20px}
+  100% {top: 0px;}
+}
+
+@-webkit-keyframes code1Move2 {
+  0%   {left: -20px;}
+  25%  {left: 50px;}
+  75%  {left: 90px}
+  100% {left: -20px;}
+}
+
+@keyframes code1Move2 {
+  0%   {left: -20px;}
+  25%  {left: 50px;}
+  75%  {left: 90px}
+  100% {left: -20px;}
+}
+
+@-webkit-keyframes code1Move3 {
+  0%   {right: -20px;}
+  25%  {right: 50px;}
+  75%  {right: 70px}
+  100% {right: -20px;}
+}
+
+@keyframes code1Move3 {
+  0%   {right: -20px;}
+  25%  {right: 50px;}
+  75%  {right: 70px}
+  100% {right: -20px;}
+}
+
+@-webkit-keyframes code1Move4 {
+  0%   {bottom: -20px;}
+  25%  {bottom: 50px;}
+  75%  {bottom: 70px}
+  100% {bottom: -20px;}
+}
+
+@keyframes code1Move4 {
+  0%   {bottom: -20px;}
+  25%  {bottom: 50px;}
+  75%  {bottom: 70px}
+  100% {bottom: -20px;}
+}
+
+.edgeOnlyText {
+    display: none;
+}
+
+@supports (-ms-ime-align:auto) {
+    .code1, .code1.version2, .code1.version3, .code1.version4 {
+        display: none;
+    }
+    .edgeOnlyText {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 900;
+        color: #fff;
+        padding-top: 100px;
+    } 
+    
+}
+
+/* Buttons */
+
+.buttonOne {
+    max-width: 150px;
+    font-size: 14px;
+    margin: auto;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    border: none;
+    background-image: linear-gradient(to left top, #b39cd0, #a88ccd, #9c7dc9, #906dc6, #845ec2);
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.buttonOne:hover {
+    background-image: linear-gradient(to left top, #b0a8b9, #a298bd, #8c89c4, #6b7dcb, #2c73d2);
+}
+
+.buttonOne.secondB {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Media q for mobile and table screen size */ 
+
+@media only screen and (max-width: 900px) {
+    .introPage, .introPageTwo, .introPageThree {
+        display: block;
+    }
+    .introPage .firstLine, .introPageTwo .secondLine, .introPageThree .thirdLine {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .mainBlock {
+        padding: 10px 0px;
+    }
+    
+    .container.partOne, .container.partTwo, .container.partThree, .containerTwo.partOne, .containerTwo.partTwo, .containerTwo.partThree, .containerThree.partOne {
+        margin: 0px 10px;
+        margin-bottom: 10px;
+    }
+    
+    .containerThree.partTwo {
+        margin: 0px 10px;
+    }
+    
+}

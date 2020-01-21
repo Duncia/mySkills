@@ -1,0 +1,145 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.gameSection {
+    width: 100%;
+    background-color: #fff;
+}
+
+.gameSection .inner {
+    position: relative;
+    font-size: 0px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.gameSection .part {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    padding: 10px;
+}
+
+.playerImg img {
+    width: 100%;
+    max-width: 150px;
+}
+
+.gameDescription {
+    padding: 10px;
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.playerName, .scorePoints {
+    font-size: 15px;
+    font-weight: 900;
+    padding-top: 5px;
+}
+
+
+.rolledPicture {
+    max-width: 100px;
+    min-height: 96px;
+    margin: auto;
+    border: 3px solid #000;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rolledPicture img {
+    width: 70px;
+}
+
+.btn.btn-success {
+    margin-bottom: 10px;
+}
+
+.scorePoints.bottom {
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.active {
+    background-color: #DCDCDC;
+}
+
+.btn {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600!important;
+    min-width: 200px;
+}
+
+.winner {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 30px 10px;
+    background-image: radial-gradient(circle, #4b4453, #684663, #8d4463, #ae4254, #c34a36);
+    color: #fff;
+    border: 2px solid #000;
+}
+
+.hide {
+    display: none;
+}
+
+.customize p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.customize {
+    padding: 10px;
+}
+
+.change {
+    font-size: 1rem;
+}
+
+.nameTxt {
+    padding-bottom: 10px;
+}
+
+input {
+    text-align: center;
+    vertical-align: top;
+    padding: 5px 0px;
+    margin-bottom: 10px!important;
+}
+
+input[type=number], input[type=text] {
+    min-width: 200px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.jsExplain {
+    background-color: #F4EBD0;
+    padding-bottom: 20px;
+}
+
+.bottomPar {
+    margin-bottom: 20px;
+}
